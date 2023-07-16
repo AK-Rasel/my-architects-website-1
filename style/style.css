@@ -6,7 +6,9 @@
     padding: 0; */
     font-family: 'Work Sans', sans-serif;
  }
-
+.heden{
+    display: none;
+}
 .btn-primary{
     border-radius: 8px;
     background: #FF900E;
@@ -16,6 +18,11 @@
     font-weight: 600;
     border: 0;
     cursor: pointer;
+}
+.section-heading{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
  /* header style */
  header{
@@ -96,6 +103,19 @@ main{
 .teams-content .text-features{
     color: #FF900E;
     font-weight: 700;
+}
+/* facts section start */
+.facts p{
+    color: #727272;
+    line-height: 16px;
+}
+.fact-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.fact-card-container .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
 }
 
 
