@@ -23,6 +23,12 @@
     color: #131313;
     font-size: 2.8rem;
     font-weight: 700;
+    margin: 24px 0;
+}
+.p-discription{
+    color: #727272;
+    line-height: 26px;
+    
 }
  /* header style */
  header{
@@ -66,10 +72,7 @@ nav li a{
     font-size: 4rem;
     font-weight: 700;
 }
-.banner-discription{
-    color: #727272;
-    line-height: 26px;
-}
+
 .banner img{
     width: 100%;
     margin-top: 20px;
@@ -105,9 +108,14 @@ main{
     font-weight: 700;
 }
 /* facts section start */
+.facts{
+    margin-bottom: 150px;
+}
 .facts p{
     color: #727272;
     line-height: 16px;
+    line-height: 26px;
+    margin-bottom: 90px;
 }
 .fact-card-container{
     display: flex;
@@ -116,8 +124,32 @@ main{
 .fact-card-container .card{
     border-radius: 8px;
     border: 1px solid #FF900E;
+    text-align: center;
+}
+.fact-card-container .card .card-stats{
+    color: #424242;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 8px 0;
+}
+.fact-card-container .card .card-tittle{
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 5px 30px 40px 30px;
+}
+.fact-card-container .card img{
+    margin: 40px 90px 10px 90px;
 }
 
+.sponspors{
+    text-align: center;
+}
+.sponspors .sponspors-imgs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
 
 
 
@@ -138,7 +170,9 @@ main{
     header{
         padding: 20px;
     }
-    nav, .teams-container{
+    nav, 
+    .teams-container,
+    .fact-card-container{
         flex-direction: column;
     }
     .teams-img-container{
@@ -147,8 +181,10 @@ main{
     .teams-content{
         text-align: center;
     }
-    .teams-content{
+    .teams-content ,
+    .fact-card-container{
         padding: 0 20px 0 20px;
+        gap: 20px;
     }
 }
 
@@ -162,5 +198,14 @@ main{
     }
     .teams-content{
         text-align: center;
+    }
+    .fact-card-container{
+        flex-direction: column;
+        
+    }
+    .fact-card-container{
+        padding: 0 20px 0 20px;
+        margin-right: -20px;
+        gap: 20px;
     }
 }
